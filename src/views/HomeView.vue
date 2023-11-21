@@ -116,7 +116,6 @@ export default {
         const ciData = response.data.records.location[0].weatherElement[0].time;
         const ciValues = ciData.map((time) => time.parameter.parameterName);
         this.ciValues = ciValues;
-        console.log("ciValues", ciValues);
       } catch (error) {
         console.error(error);
       }
@@ -142,7 +141,6 @@ export default {
           Number(time.parameter.parameterName)
         );
         this.popValues = popValues;
-        console.log("popValues", popValues);
       } catch (error) {
         console.error(error);
       }
@@ -171,7 +169,6 @@ export default {
           Number(time.elementValue[0].value)
         );
         this.minTValues = minTValues; // 将获取到的 MinT 数据赋值给 data 中的 minTValues
-        console.log("weekMinT", minTValues);
       } catch (error) {
         console.error(error);
       }
@@ -197,7 +194,6 @@ export default {
           Number(time.elementValue[0].value)
         );
         this.maxTValues = maxTValues;
-        console.log("weekMaxT", maxTValues);
       } catch (error) {
         console.error(error);
       }
@@ -222,7 +218,6 @@ export default {
           Number(time.elementValue[0].value)
         );
         this.minATValues = minATValues;
-        console.log("weekMinAT", minATValues);
       } catch (error) {
         console.error(error);
       }
@@ -247,7 +242,6 @@ export default {
           Number(time.elementValue[0].value)
         );
         this.maxATValues = maxATValues;
-        console.log("weekMaxAT", maxATValues);
       } catch (error) {
         console.error(error);
       }
@@ -272,7 +266,6 @@ export default {
           Number(time.elementValue[0].value)
         );
         this.uviValues = uviValues;
-        console.log("weekUVI", uviValues);
       } catch (error) {
         console.error(error);
       }

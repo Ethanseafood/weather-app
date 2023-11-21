@@ -23,5 +23,6 @@ export default {
   background-color: lightgray;
   margin-right: 10px;
   padding: 10px;
+  border-radius: 10px;
 }
 </style>
